@@ -5,13 +5,20 @@
              xmlns:viewmodels="clr-namespace:XamarinDatosLocales.ViewModels">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout.BindingContext>                <viewmodels:AlumnosViewModel/>            </StackLayout.BindingContext>            <Button Text="Leer Alumnos.xml"                    HorizontalOptions="FillAndExpand"                    Command="{Binding MostrarAlumnos}"/>            <ListView x:Name="MyList" ItemsSource="{Binding Alumnos}">
+            <StackLayout.BindingContext>
+                <viewmodels:AlumnosViewModel/>
+            </StackLayout.BindingContext>
+            <Button Text="Leer Alumnos.xml"
+                    HorizontalOptions="FillAndExpand"
+                    Command="{Binding MostrarAlumnos}"/>
+            <ListView x:Name="MyList" ItemsSource="{Binding Alumnos}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding }"/>
-                                <Button Text="Delete"/>
+                                <Label Text="{Binding Nombre}"/>
+                                <Label Text="{Binding Apellidos}"/>
+                                <Label Text="{Binding Nota}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

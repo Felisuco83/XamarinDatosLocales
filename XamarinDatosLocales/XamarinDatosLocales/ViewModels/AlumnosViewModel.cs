@@ -16,7 +16,7 @@ namespace XamarinDatosLocales.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         private List<Alumno> _Alumnos;
-        public List<Alumno> Alumnos { get { return this._Alumnos; } set { this._Alumnos = value; OnPropertyChanged("Data"); } }
+        public List<Alumno> Alumnos { get { return this._Alumnos; } set { this._Alumnos = value; OnPropertyChanged("Alumnos"); } }
         public Command MostrarAlumnos
         {
             get
