@@ -13,7 +13,11 @@ namespace XamarinDatosLocales
 
             //MainPage = new MainPage();
             //MainPage = new FicheroSimpleView();
-            MainPage = new AlumnosView();
+            //MainPage = new AlumnosView();            
+            //MainPage = new SeriesView();
+            //MainPage = new SeriesCarruselView();
+            MainPage = new PeliculasView();
+
         }
 
         protected override void OnStart()
